@@ -1,15 +1,12 @@
----
-layout: home
-search_exclude: true
-image: images/logo.png
----
+#팀 예제 (짝수,홀수 찾기 문제 )
+def a_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
 
-This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
-
-![]({{site.baseurl}}/images/diagram.png "https://github.com/fastai/fastpages")
-
-[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
-
-You can edit the `index.html` file to change this content.
-
-# Posts
+i_number = int(input('숫자: '))
+if a_even(i_number):
+    print('짝수 입니다.')
+else:
+    print('홀수 입니다')
